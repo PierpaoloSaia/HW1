@@ -1,0 +1,259 @@
+html{
+    font-size:10px;
+}    
+
+body{
+    background-color:rgb(2, 2, 54);
+    margin:0;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:100px;
+    z-index:2;
+}
+
+#links{
+    display:flex;
+}
+
+div.link{
+    font-family:cursive;
+    font-size: 2rem;
+    font-style:italic;
+    background-color:transparent;
+    padding: 10px;
+    border-radius:40px;
+    text-decoration: none;
+    color:white;
+    margin: 2px;
+}
+
+div.link:hover{
+    color:red;
+    font-family: 'Lobster', serif;
+}
+
+#header1{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    text-align:center;
+    background-image:url(https://static.sky.it/editorialimages/b73f4631e0389b62e17028e14cca61b870d48a36/skytg24/it/sport/2022/02/23/partite-champions-league-risultati-highlights/champions-league-pallone-ipa.jpg);
+    height:500px;
+    background-size:cover;
+    background-position:center;
+    width:100%;
+    position:relative;
+    z-index:0;
+}
+
+#nomesito{
+    font-size:7rem;
+    color:White;
+    font-family:'Lobster', serif;
+    margin: 20px;
+    text-decoration:none;
+    z-index:2;
+}
+
+#nomesito:hover{
+    color:red;
+}
+
+#overlay{
+    background-color: rgba(0,0,0,0.3);
+    height:100%;
+    width:100%;
+    position:absolute;
+    z-index:1;
+
+}
+
+#menu{
+    display: none;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-end;
+    margin-right: 6%;
+}
+
+#menu div{
+    width:25px;
+    height:2px;
+    background-color: white;
+    margin:2.5px;
+    border-radius:2px;
+}
+
+a.bottone{
+    text-decoration: none;
+    color:white;
+}
+
+a.bottone:hover{
+    color:red;
+}
+
+#form1{
+    position:absolute;
+    z-index: 2;
+    display: flex;
+    justify-content:flex-end;
+    width:100%;
+    margin-top:100px;
+}
+
+#form2{
+    margin-top:140px;
+    position:absolute;
+    z-index:2;
+    display:flex;
+    justify-content: flex-end;
+    width:100%;
+}
+
+#barra, #barra2, #barra3{
+    margin-right:10px;
+    border-radius: 8px;
+}
+
+#seleziona{
+    margin-right:10px;
+    border-radius: 8px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#submit, #submit2{
+    border-radius:12px;
+    background-color: blue;
+    box-shadow: 2px 2px 2px grey;
+    color: white;
+    cursor:pointer;
+}
+
+#submit:hover, #submit2:hover{
+    background-color:white;
+    color:blue;
+}
+
+.immagine1{
+    margin-top:80px;
+    margin-bottom:20px;
+    border-radius:12px;
+}
+
+.immagine2{
+    margin-bottom:40px;
+    border-radius: 20px;
+}
+
+.immagine3{
+    margin-top:80px;
+    margin-bottom:20px;
+}
+
+p.risultato{
+    color:blue;
+    font-size:2rem;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+#section1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f4f8;
+}
+
+.bottone-like {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: red;
+    width:100%;
+    margin-bottom: 20px;
+}
+
+@keyframes heartAnimation {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .bottone-like i {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .bottone-like i.animating {
+    animation: heartAnimation 0.5s;
+  }
+
+  #footer {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    #form1,
+    #form2 {
+        justify-content: flex-end;
+    }
+
+    #barra,
+    #seleziona,
+    #barra2,
+    #barra3 {
+        width:30vw;
+    }
+
+    #nomesito{
+        font-size:4rem;
+    }
+
+    h1{
+        font-size:3rem;
+    }
+
+    .immagine1{
+        width:40%;
+    }
+    
+    .immagine2{
+        width:90%;
+        height:80%;
+    }
+
+    .immagine3{
+        width:70%;
+    }
+
+    #links{
+        flex-direction: column;
+    }
+
+    div.link{
+        font-family:cursive;
+        font-size: 1.4rem;
+        font-style:italic;
+        background-color:transparent;
+        border-radius:40px;
+        text-decoration: none;
+        color:white;
+        padding:0;
+        margin:0;
+        margin-right:10px;
+        margin-bottom:10px;
+    }
+
+}
+  

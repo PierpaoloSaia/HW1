@@ -1,0 +1,66 @@
+body{
+    background-color: #e0f5ff;
+}
+
+main{
+    display:flex;
+    justify-content: center;
+}
+
+#signup label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+#nome,
+#cognome,
+#eMail,
+#username,
+#password,
+#conferma_password {
+  padding: 5px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 12px;
+}
+
+#signup input[type="submit"] {
+    display: block;
+    padding: 10px;
+    background-color:darkblue;
+    color:white;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    font-family:'Courier New', Courier, monospace;
+  }
+
+h1{
+    margin-top:20px;
+    width:100%;
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div.errore, input.errore{
+    border:3px solid;
+}
+
+.nonOpaco{
+    opacity:0;
+}
+
+.opaco{
+    opacity:1;
+    color:red;
+}
+
+
+
+
+
+
